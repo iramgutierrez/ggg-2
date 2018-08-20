@@ -1,0 +1,12 @@
+{
+    "plugins": [
+      ["babel-root-import", {
+        "rootPathPrefix": "#",
+        "rootPathSuffix": "."
+      }],
+      "babel-plugin-transform-decorators-legacy"
+    ],
+    "presets": [
+      "es2015"
+    ]
+  }

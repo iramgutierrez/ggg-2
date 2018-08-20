@@ -1,0 +1,23 @@
+{
+  "name": "waterline-core",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js --exec babel-node --presets es2015",
+    "start": "pm2 start process.json",
+    "build": "babel ./ --out-dir build --presets es2015 --ignore build/*,modules/*,node_modules/*,test/*,coverage/*,.nyc_output/* --plugins transform-runtime,add-module-exports"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@gigigo/gigigo-mx-auth": "^0.18.3",
+    "babel-root-import": "^4.1.8",
+    "co": "^4.6.0",
+    "nodemon": "^1.14.11",
+    "sails-mongo": "^1.0.0-11",
+    "sails-mysql": "^1.0.0-17",
+    "waterline": "^0.13.1-9"
+  }
+}
